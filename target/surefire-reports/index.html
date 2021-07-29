@@ -29,15 +29,15 @@
     <div class="navigator-root">
       <div class="navigator-suite-header">
         <span>All suites</span>
-        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
-          <img src="collapseall.gif" class="collapse-all-icon">
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
           </img> <!-- collapse-all-icon -->
         </a> <!-- collapse-all-link -->
       </div> <!-- navigator-suite-header -->
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Facebook.com" class="navigator-link">
+            <a href="#" class="navigator-link" panel-name="suite-Facebook.com">
               <span class="suite-name border-passed">Facebook.com</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Facebook.com" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="test-xml-Facebook.com">
                     <span>D:\Automation\Facebook.com\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Facebook.com" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="testlist-Facebook.com">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Facebook.com" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="group-Facebook.com">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Facebook.com" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="times-Facebook.com">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Facebook.com" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="reporter-Facebook.com">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Facebook.com" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Facebook.com">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Facebook.com" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="chronological-Facebook.com">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -101,8 +101,8 @@
                     </span>
                     <div class="method-list-content passed suite-Facebook.com">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Facebook.com" title="com.facebook.testCases.TC_FacebookLoginPage_001" class="method navigator-link" hash-for-method="verifyFacbookLoginPageFunctionality">verifyFacbookLoginPageFunctionality</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Facebook.com" title="com.facebook.testCases.TC_FacebookLoginPage_001" hash-for-method="verifyFacbookLoginPageFunctionality">verifyFacbookLoginPageFunctionality</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Facebook.com -->
@@ -141,11 +141,11 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Facebook.com&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Facebook.com&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.facebook.utilities.FacebookReporting&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Test&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.facebook.testCases.TC_FacebookLoginPage_001&quot;/&gt;
@@ -192,12 +192,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyFacbookLoginPageFunctionality')
 data.setCell(0, 2, 'com.facebook.testCases.TC_FacebookLoginPage_001')
-data.setCell(0, 3, 5116);
+data.setCell(0, 3, 6067);
 window.suiteTableData['Facebook.com']= { tableData: data, tableDiv: 'times-div-Facebook.com'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <span class="suite-total-time">Total running time: 6 seconds</span>
               <div id="times-div-Facebook.com">
               </div> <!-- times-div-Facebook.com -->
             </div> <!-- times-div -->
@@ -230,8 +230,12 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">verifyFacbookLoginPageFunctionality</span>
-                <span class="method-start">5523 ms</span>
+                <span class="method-start">5396 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">11487 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
