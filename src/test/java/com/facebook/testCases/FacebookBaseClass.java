@@ -57,9 +57,8 @@ public class FacebookBaseClass {
 		driver.manage().window().maximize();
 		logger.info("Maximizing Browser....");
 
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.get(ApplicationURL);
-		logger.info("Opening Application URl....");
+		logger.info("Opening Application URL....");
 
 		
 	}
