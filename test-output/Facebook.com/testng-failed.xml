@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Facebook.com]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.facebook.utilities.FacebookReporting"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.facebook.testCases.TC_FacebookLoginPage_001">
+        <methods>
+          <include name="setup"/>
+          <include name="verifyFacbookLoginPageFunctionality"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.facebook.testCases.TC_FacebookLoginPage_001 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Facebook.com] -->
