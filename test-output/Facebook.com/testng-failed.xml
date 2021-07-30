@@ -7,13 +7,13 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.facebook.testCases.TC_FacebookLoginPage_001">
+      <class name="com.facebook.testCases.TC_FacebookProfile_002">
         <methods>
+          <include name="verifyFacebookProfilePicture"/>
           <include name="setup"/>
-          <include name="verifyFacbookLoginPageFunctionality"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- com.facebook.testCases.TC_FacebookLoginPage_001 -->
+      </class> <!-- com.facebook.testCases.TC_FacebookProfile_002 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Facebook.com] -->
